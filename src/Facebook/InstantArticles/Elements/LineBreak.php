@@ -34,6 +34,7 @@ class LineBreak extends FormattedText
      * Structure and create <b> node.
      *
      * @param DOMDocument $document - The document where this element will be appended (optional).
+     * @return \DOMElement
      */
     public function toDOMElement($document = null)
     {

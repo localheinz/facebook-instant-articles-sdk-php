@@ -78,6 +78,7 @@ class Slideshow extends Audible
      * made with @see Caption.
      *
      * @param Caption the caption the slideshow will have
+     * @return $this
      */
     public function withCaption($caption)
     {
@@ -91,6 +92,7 @@ class Slideshow extends Audible
      * Sets the Image list of images for the slideshow. It is REQUIRED.
      *
      * @param Image[] The images. Ie: http://domain.com/img.png
+     * @return $this
      */
     public function withImages($article_images)
     {
@@ -104,6 +106,7 @@ class Slideshow extends Audible
      * Adds a new image to the slideshow. It is REQUIRED.
      *
      * @param string[] The url of image. Ie: http://domain.com/img.png
+     * @return $this
      */
     public function addImage($article_image)
     {
@@ -130,6 +133,7 @@ class Slideshow extends Audible
      * Adds audio to this slideshow.
      *
      * @param Audio The audio object
+     * @return $this
      */
     public function withAudio($audio)
     {
@@ -183,6 +187,7 @@ class Slideshow extends Audible
      * Structure and create the full Slideshow in a XML format DOMElement.
      *
      * @param $document DOMDocument where this element will be appended. Optional
+     * @return \DOMElement
      */
     public function toDOMElement($document = null)
     {

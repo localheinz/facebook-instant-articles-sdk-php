@@ -29,6 +29,7 @@ abstract class TextContainer extends Element
      * Adds content to the formatted text.
      *
      * @param string|FormattedText The content can be a string or a FormattedText.
+     * @return $this
      */
     public function appendText($child)
     {
@@ -50,6 +51,7 @@ abstract class TextContainer extends Element
      * Structure and create the full text in a DOMDocumentFragment.
      *
      * @param DOMDocument $document - The document where this element will be appended (optional).
+     * @return \DOMDocumentFragment
      */
     public function textToDOMDocumentFragment($document = null)
     {

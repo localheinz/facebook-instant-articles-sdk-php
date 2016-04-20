@@ -47,6 +47,7 @@ class H1 extends TextContainer
      * @see Caption::ALIGN_CENTER
      *
      * @param string alignment option that will be used.
+     * @return $this
      */
     public function withTextAlignment($text_alignment)
     {
@@ -103,6 +104,7 @@ class H1 extends TextContainer
      * Structure and create the H1 in a DOMElement.
      *
      * @param DOMDocument $document - The document where this element will be appended (optional).
+     * @return \DOMElement
      */
     public function toDOMElement($document = null)
     {

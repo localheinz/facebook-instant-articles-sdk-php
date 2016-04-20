@@ -59,6 +59,7 @@ class RelatedArticles extends Element
     /**
      * Adds a new related article item
      * @param string The related article URL
+     * @return $this
      */
     public function addRelated($item)
     {
@@ -72,6 +73,7 @@ class RelatedArticles extends Element
      * Sets the title of Related articles content block
      *
      * @param string the name of related articles block
+     * @return $this
      */
     public function withTitle($title)
     {
@@ -101,6 +103,7 @@ class RelatedArticles extends Element
      * Structure and create the full ArticleVideo in a XML format DOMElement.
      *
      * @param $document DOMDocument where this element will be appended. Optional
+     * @return \DOMElement
      */
     public function toDOMElement($document = null)
     {

@@ -83,6 +83,7 @@ class Type
      * @see Type::FLOAT
      * @see Type::BOOLEAN
      * @see Type::ARRAY_TYPE
+     * @return bool
      */
     private static function isPrimitive($var, $type)
     {
@@ -108,6 +109,7 @@ class Type
      *
      * @param array $var the target variable to be checked. REQUIRED must be array
      * @param array|class $types_allowed The set of classes that $var will be checked against
+     * @return bool
      * @throws InvalidArgumentException when not all items in an array are from the types in $types_allowed
      *
      * @see Type::STRING
@@ -184,6 +186,7 @@ class Type
      * the size differs from the $size it will throw InvalidArgumentException
      * @param array $array the array that will be checked
      * @param int $size The EXACTLY size that array must have
+     * @return bool
      */
     public static function enforceArraySize($array, $size)
     {
@@ -223,6 +226,7 @@ class Type
      * I.e.: array (1,2,3), $min_size 4 = throws InvalidArgumentException
      * @param array $array the array that will be checked
      * @param int $min_size The EXACTLY size that array must have
+     * @return bool
      * @throws InvalidArgumentException if $array doesnt have at least $min_size items
      */
     public static function enforceArraySizeGreaterThan($array, $min_size)
@@ -265,6 +269,7 @@ class Type
      * I.e.: array (1,2,3), $max_size 2 = throws InvalidArgumentException
      * @param array $array the array that will be checked
      * @param int $max_size The maximun items the array can have
+     * @return bool
      * @throws InvalidArgumentException if $array have more than $max_size items
      */
     public static function enforceArraySizeLowerThan($array, $max_size)

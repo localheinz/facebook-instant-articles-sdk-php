@@ -57,6 +57,7 @@ class Footer extends Element
      * Sets the text content of the credits
      *
      * @param string|array<paragrah> $credits - A list of paragraphs or a single string for the content of the credit.
+     * @return $this
      */
     public function withCredits($credits)
     {
@@ -70,6 +71,7 @@ class Footer extends Element
      * Adds a new Paragraph to the credits
      *
      * @param Paragrah $credit - One Paragraph to be added as a credit.
+     * @return $this
      */
     public function addCredit($credit)
     {
@@ -83,6 +85,7 @@ class Footer extends Element
      * Sets the copyright information for the article.
      *
      * @param string $copyright - The copyright information.
+     * @return $this
      */
     public function withCopyright($copyright)
     {
@@ -96,6 +99,7 @@ class Footer extends Element
      * Sets the related articles within the footer of the article.
      *
      * @param RelatedArticles $related_articles - The related articles
+     * @return $this
      */
     public function withRelatedArticles($related_articles)
     {
@@ -139,6 +143,7 @@ class Footer extends Element
      * Structure and create the full Footer in a DOMElement.
      *
      * @param DOMDocument $document - The document where this element will be appended (optional).
+     * @return \DOMElement
      */
     public function toDOMElement($document = null)
     {

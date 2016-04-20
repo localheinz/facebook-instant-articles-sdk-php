@@ -58,6 +58,7 @@ class Client
      * @param string $pageID Specify the Facebook Page to use for Instant Articles
      * @param bool $developmentMode|false Configure the service to use the Instant Articles development sandbox
      *
+     * @return static
      * @throws FacebookSDKException
      */
     public static function create($appID, $appSecret, $accessToken, $pageID, $developmentMode = false)

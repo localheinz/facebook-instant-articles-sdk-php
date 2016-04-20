@@ -41,6 +41,7 @@ class Anchor extends FormattedText
 
     /**
      * @param string the anchor link
+     * @return $this
      */
     public function withHref($href)
     {
@@ -51,6 +52,7 @@ class Anchor extends FormattedText
 
     /**
      * @param string the anchor rel attribute
+     * @return $this
      */
     public function withRel($rel)
     {
@@ -79,6 +81,7 @@ class Anchor extends FormattedText
      * Structure and create <a> node.
      *
      * @param DOMDocument $document - The document where this element will be appended (optional).
+     * @return \DOMElement
      */
     public function toDOMElement($document = null)
     {

@@ -37,6 +37,7 @@ class Helper
      * @param string $appID
      * @param string $appSecret
      *
+     * @return static
      * @throws FacebookSDKException
      */
     public static function create($appID, $appSecret)

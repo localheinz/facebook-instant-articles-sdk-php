@@ -34,6 +34,7 @@ class GetterFactory
      * @see ExistsGetter
      * @see XpathGetter
      * @param array<string, string> $getter_configuration that maps the properties for getter
+     * @return AbstractGetter
      */
     public static function create($getter_configuration)
     {

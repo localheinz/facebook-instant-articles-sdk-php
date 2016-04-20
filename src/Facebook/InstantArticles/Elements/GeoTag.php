@@ -83,6 +83,7 @@ class GeoTag extends Element
      * Structure and create the full Map in a XML format DOMElement.
      *
      * @param $document DOMDocument where this element will be appended. Optional
+     * @return \DOMElement
      */
     public function toDOMElement($document = null)
     {

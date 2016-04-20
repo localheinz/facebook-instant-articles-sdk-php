@@ -105,6 +105,7 @@ class InstantArticle extends Element
      * Sets the canonical URL for the Instant Article. It is REQUIRED.
      *
      * @param string The canonical url of article. Ie: http://domain.com/article.html
+     * @return $this
      */
     public function withCanonicalURL($url)
     {
@@ -118,6 +119,7 @@ class InstantArticle extends Element
      * Sets the charset for the Instant Article. utf-8 by default.
      *
      * @param string The charset of article. Ie: "iso-8859-1"
+     * @return $this
      */
     public function withCharset($charset)
     {
@@ -131,6 +133,7 @@ class InstantArticle extends Element
      * Sets the style to be applied to this Instant Article
      *
      * @param string Name of the style
+     * @return $this
      */
     public function withStyle($style)
     {
@@ -161,6 +164,7 @@ class InstantArticle extends Element
     /**
      * Sets the header content to this InstantArticle
      * @param Header to be added to this Article.
+     * @return $this
      */
     public function withHeader($header)
     {
@@ -173,6 +177,7 @@ class InstantArticle extends Element
     /**
      * Sets the footer content to this InstantArticle
      * @param Footer to be added to this Article.
+     * @return $this
      */
     public function withFooter($footer)
     {
@@ -185,6 +190,7 @@ class InstantArticle extends Element
     /**
      * Adds new child elements to this InstantArticle
      * @param Element to be added to this Article.
+     * @return $this
      */
     public function addChild($child)
     {

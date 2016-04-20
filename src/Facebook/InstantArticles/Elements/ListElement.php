@@ -75,6 +75,7 @@ class ListElement extends Element
      * Adds a new item to the List
      *
      * @param ListItem The new item that will be pushed to the end of the list
+     * @return $this
      */
     public function addItem($new_item)
     {
@@ -91,6 +92,7 @@ class ListElement extends Element
      * Sets all items of the list as the array on the parameter
      *
      * @param ListItem[] The new items. Replaces all items from the list
+     * @return $this
      */
     public function withItems($new_items)
     {
@@ -150,6 +152,7 @@ class ListElement extends Element
      * Structure and create the full Video in a XML format DOMElement.
      *
      * @param $document DOMDocument where this element will be appended. Optional
+     * @return \DOMElement
      */
     public function toDOMElement($document = null)
     {

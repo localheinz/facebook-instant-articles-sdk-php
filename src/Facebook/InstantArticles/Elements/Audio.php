@@ -67,6 +67,7 @@ class Audio extends Element
      * Sets the URL for the audio. It is REQUIRED.
      *
      * @param string The url of image. Ie: http://domain.com/audiofile.mp3
+     * @return $this
      */
     public function withURL($url)
     {
@@ -80,6 +81,7 @@ class Audio extends Element
      * The audio title.
      *
      * @param string the audio title that will be shown
+     * @return $this
      */
     public function withTitle($title)
     {
@@ -160,6 +162,7 @@ class Audio extends Element
      * Structure and create the full ArticleImage in a XML format DOMElement.
      *
      * @param $document DOMDocument where this element will be appended. Optional
+     * @return \DOMElement
      */
     public function toDOMElement($document = null)
     {

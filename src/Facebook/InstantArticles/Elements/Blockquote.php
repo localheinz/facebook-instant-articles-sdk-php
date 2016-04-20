@@ -57,6 +57,7 @@ class Blockquote extends TextContainer
      * Sets the unescaped text within the blockquote.
      *
      * @param string The unescaped string.
+     * @return $this
      */
     public function withText($text)
     {
@@ -70,6 +71,7 @@ class Blockquote extends TextContainer
      * Structure and create the full Blockquote in a DOMElement.
      *
      * @param DOMDocument $document - The document where this element will be appended (optional).
+     * @return \DOMElement
      */
     public function toDOMElement($document = null)
     {

@@ -128,6 +128,7 @@ class Video extends Element
      * made with @see Caption.
      *
      * @param Caption the caption the video will have
+     * @return $this
      */
     public function withCaption($caption)
     {
@@ -141,6 +142,7 @@ class Video extends Element
      * Sets the URL for the video. It is REQUIRED.
      *
      * @param string The url of video. Ie: http://domain.com/video.mp4
+     * @return $this
      */
     public function withURL($url)
     {
@@ -158,6 +160,7 @@ class Video extends Element
      * @see Video::ASPECT_FIT_ONLY
      * @see Video::FULLSCREEN
      * @see Video::NON_INTERACTIVE
+     * @return $this
      */
     public function withPresentation($presentation)
     {
@@ -278,6 +281,7 @@ class Video extends Element
 
     /**
      * @param string content type of the video. Ex: "video/mp4"
+     * @return $this
      */
     public function withContentType($contentType)
     {
@@ -309,6 +313,7 @@ class Video extends Element
      * Sets the attribution string
      *
      * @param The attribution text
+     * @return $this
      */
     public function withAttribution($attribution)
     {
@@ -398,6 +403,7 @@ class Video extends Element
      * Structure and create the full Video in a XML format DOMElement.
      *
      * @param $document DOMDocument where this element will be appended. Optional
+     * @return \DOMElement
      */
     public function toDOMElement($document = null)
     {

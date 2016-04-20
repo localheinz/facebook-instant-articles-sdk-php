@@ -43,6 +43,7 @@ class RelatedItem extends Element
     /**
      * Sets the article URL
      * @param string The related article URL
+     * @return $this
      */
     public function withURL($url)
     {
@@ -92,6 +93,7 @@ class RelatedItem extends Element
      * Structure and create the full ArticleVideo in a XML format DOMElement.
      *
      * @param $document DOMDocument where this element will be appended. Optional
+     * @return \DOMElement
      */
     public function toDOMElement($document = null)
     {

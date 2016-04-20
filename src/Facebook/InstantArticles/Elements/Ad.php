@@ -80,6 +80,7 @@ class Ad extends Element
      * Sets the height of your ad.
      *
      * @param int The height of your ad.
+     * @return $this
      */
     public function withHeight($height)
     {
@@ -93,6 +94,7 @@ class Ad extends Element
      * Sets the source for the ad.
      *
      * @param string The source of the content for your ad.
+     * @return $this
      */
     public function withSource($source)
     {
@@ -106,6 +108,7 @@ class Ad extends Element
      * Sets the width of your ad.
      *
      * @param int The width of your ad.
+     * @return $this
      */
     public function withWidth($width)
     {
@@ -119,6 +122,7 @@ class Ad extends Element
      * Sets the unescaped HTML of your ad.
      *
      * @param \DOMNode $html The unescaped HTML of your ad.
+     * @return $this
      */
     public function withHTML($html)
     {
@@ -180,6 +184,7 @@ class Ad extends Element
      * Structure and create the full Ad in a DOMElement.
      *
      * @param DOMDocument $document - The document where this element will be appended (optional).
+     * @return \DOMElement
      */
     public function toDOMElement($document = null)
     {

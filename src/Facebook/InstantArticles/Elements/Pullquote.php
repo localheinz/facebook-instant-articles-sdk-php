@@ -46,6 +46,7 @@ class Pullquote extends TextContainer
      * Sets the attribution string
      *
      * @param The attribution text
+     * @return $this
      */
     public function withAttribution($attribution)
     {
@@ -71,6 +72,7 @@ class Pullquote extends TextContainer
      * Structure and create the full Pullquote in a DOMElement.
      *
      * @param DOMDocument $document - The document where this element will be appended (optional).
+     * @return \DOMElement
      */
     public function toDOMElement($document = null)
     {

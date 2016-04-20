@@ -36,6 +36,7 @@ class Paragraph extends TextContainer
      * Structure and create the full Paragraph in a DOMElement.
      *
      * @param DOMDocument $document - The document where this element will be appended (optional).
+     * @return \DOMElement
      */
     public function toDOMElement($document = null)
     {
