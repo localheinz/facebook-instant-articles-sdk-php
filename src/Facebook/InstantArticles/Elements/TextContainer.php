@@ -21,7 +21,7 @@ use Facebook\InstantArticles\Validators\Type;
 abstract class TextContainer extends Element
 {
     /**
-     * @var array The content is a list of strings and FormattingElements
+     * @var string[]|FormattedText[]|TextContainer[] The content is a list of strings and FormattingElements
      */
     private $textChildren = array();
 
@@ -40,7 +40,7 @@ abstract class TextContainer extends Element
     }
 
     /**
-     * @return array<string|FormattedText> All text token for this text container.
+     * @return string[]|FormattedText[]|TextContainer[] All text token for this text container.
      */
     public function getTextChildren()
     {

@@ -56,7 +56,7 @@ class Footer extends Element
     /**
      * Sets the text content of the credits
      *
-     * @param string|array<paragrah> $credits - A list of paragraphs or a single string for the content of the credit.
+     * @param string|Paragraph[] $credits - A list of paragraphs or a single string for the content of the credit.
      * @return $this
      */
     public function withCredits($credits)
@@ -112,7 +112,7 @@ class Footer extends Element
     /**
      * Gets the text content of the credits
      *
-     * @return string|array<paragrah> $credits - A list of paragraphs or a single string for the content of the credit.
+     * @return string|Paragraph[] $credits - A list of paragraphs or a single string for the content of the credit.
      */
     public function getCredits()
     {

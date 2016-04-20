@@ -144,7 +144,7 @@ class Header extends Element
 
     /**
      * Replace all authors within this Article
-     * @param array<Author> $authors All the authors
+     * @param Author[] $authors All the authors
      * @return $this
      */
     public function withAuthors($authors)
@@ -226,7 +226,7 @@ class Header extends Element
 
     /**
      * Replace all ads within this Article
-     * @param array<Ad> $ads All the ads
+     * @param Ad[] $ads All the ads
      * @return $this
      */
     public function withAds($ads)
@@ -262,7 +262,7 @@ class Header extends Element
     }
 
     /**
-     * @return array<Author> $authors All the authors
+     * @return Author[] $authors All the authors
      */
     public function getAuthors()
     {
@@ -294,7 +294,7 @@ class Header extends Element
     }
 
     /**
-     * @return array<Ad> $ads All the ads
+     * @return Ad[] $ads All the ads
      */
     public function getAds()
     {

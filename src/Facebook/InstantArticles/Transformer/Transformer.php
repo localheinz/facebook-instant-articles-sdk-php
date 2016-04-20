@@ -15,6 +15,9 @@ use Facebook\InstantArticles\Validators\Type;
 
 class Transformer
 {
+    /**
+     * @var Rule[]
+     */
     private $rules = array();
     private $warnings = array();
     private $ruleCount = 0;
@@ -27,7 +30,7 @@ class Transformer
      * Gets all types a given class is, including itself, parent classes and interfaces.
      *
      * @param string $className - the name of the className
-     * @return array of class names the provided class name is
+     * @return string[] array of class names the provided class name is
      */
     private static function getAllClassTypes($className) {
         // Memoizes
@@ -184,7 +187,7 @@ class Transformer
     /**
      * Gets all rules already set in this transformer instance.
      *
-     * @return array List of configured rules.
+     * @return Rule[] List of configured rules.
      */
     public function getRules()
     {

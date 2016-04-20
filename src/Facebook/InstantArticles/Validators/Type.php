@@ -30,7 +30,7 @@ class Type
      * It will throw exception if not satisfied
      *
      * @param mixed $var The object that will be verified
-     * @param mixed $types_allowed array of classes or one single class
+     * @param string|string[] $types_allowed array of classes or one single class
      * @return boolean true when success, or throws exception when not satisfied
      * @throws InvalidArgumentException when $var doesnt comply with $types_allowed
      */
@@ -44,7 +44,7 @@ class Type
      * It will return the success of the check.
      *
      * @param mixed $var The object that will be verified
-     * @param mixed $types_allowed array of classes or one single class
+     * @param string|string[]$types_allowed array of classes or one single class
      * @param boolean $enforce If informed with true, it works as ()@see Type::enforce()) method
      * @return boolean true when success, false when failed the check
      * @throws InvalidArgumentException if $enforced is true and $var doesnt comply with the $types_allowed
@@ -108,7 +108,7 @@ class Type
      * expectations an InvalidArgumentException will be thrown.
      *
      * @param array $var the target variable to be checked. REQUIRED must be array
-     * @param array|class $types_allowed The set of classes that $var will be checked against
+     * @param string|string[] $types_allowed The set of classes that $var will be checked against
      * @return bool
      * @throws InvalidArgumentException when not all items in an array are from the types in $types_allowed
      *
@@ -130,7 +130,7 @@ class Type
      * expectations false will be returned
      *
      * @param array $var the target variable to be checked. REQUIRED must be array
-     * @param array|class $types_allowed The set of classes that $var will be checked against
+     * @param string|string[] $types_allowed The set of classes that $var will be checked against
      * @return true for success, false otherwise
      *
      * @see Type::STRING

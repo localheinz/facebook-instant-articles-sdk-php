@@ -238,7 +238,7 @@ class InstantArticle extends Element
     }
 
     /**
-     * @return array<Element> the elements this article contains
+     * @return Element[] the elements this article contains
      */
     public function getChildren()
     {
