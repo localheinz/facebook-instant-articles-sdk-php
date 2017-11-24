@@ -36,11 +36,11 @@
             "@test"
         ],
         "cs": [
-            "composer install",
+            "@install",
             "phpcbf --standard=phpcs.xml -p || phpcs --standard=phpcs.xml -p"
         ],
         "test": [
-            "composer install",
+            "@install",
             "phpunit"
         ]
     }
